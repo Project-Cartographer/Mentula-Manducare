@@ -1,0 +1,56 @@
+﻿.mdl-select .mdl-icon-toggle__label {
+    float: right;
+    margin-top: -30px;
+    color: rgba(0,0,0,0.4)
+}
+.mdl-select.mdl-textfield--colored .mdl-icon-toggle__label {
+    color: white;
+}
+.mdl-select:not(.mdl-textfield--colored).is-focused .mdl-icon-toggle__label {
+    color: #3f51b5
+}
+.mdl-select {
+    max-height: 67px;
+}
+.mdl-select .mdl-menu__container {
+    width: 100%;
+    overflow: hidden;
+    position: absolute !important;
+    z-index: 1;
+}
+.mdl-select .mdl-menu__container .mdl-menu {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.mdl-select .mdl-menu__container .mdl-menu .mdl-menu__item {
+    font-size: 16px;
+    padding: 0 36px !important;
+               
+}
+.mdl-select.mdl-textfield--slim .mdl-textfield__label {
+    top: -15px !important;
+}
+.mdl-select.mdl-textfield--slim .mdl-textfield__label:after {
+    bottom: 2px !important;
+}
+.mdl-select__fullwidth .mdl-menu {
+    width: 100%
+}
+
+.mdl-select__fix-height .mdl-menu__container {
+    overflow-y: auto;
+    max-height: 300px !important
+}
+
+.mdl-select__fix-height .mdl-menu.mdl-menu--top-left {
+    bottom: auto;
+    top: 0
+}
+.mdl-select.mdl-textfield--slim:not(.is-focused):not(.mdl-select-hasValue) .mdl-textfield__label {
+    line-height: 3.6;
+}
+.mdl-select .mdl-menu__container {
+    max-height: 150px !important;
+    overflow-y: auto;
+    z-index: 999999 !important;
+}

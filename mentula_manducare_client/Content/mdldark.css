@@ -1,0 +1,865 @@
+﻿.mdldark {
+    background-color: #303030;
+    color: #fff
+}
+
+    .mdldark a {
+        outline-color: inherit
+    }
+
+    .mdldark .mdl-color--primary {
+        background-color: #ffc107 !important
+    }
+
+    .mdldark .mdl-color--primary-contrast {
+        background-color: #fff8e1 !important
+    }
+
+    .mdldark .mdl-color--primary-dark {
+        background-color: #ffa000 !important
+    }
+
+    .mdldark .mdl-color--accent {
+        background-color: #536dfe !important
+    }
+
+    .mdldark .mdl-color--accent-contrast {
+        background-color: #fff !important
+    }
+
+    .mdldark .mdl-color-text--primary {
+        color: #ffc107 !important
+    }
+
+    .mdldark .mdl-color-text--primary-contrast {
+        color: #fff8e1 !important
+    }
+
+    .mdldark .mdl-color-text--primary-dark {
+        color: #ffa000 !important
+    }
+
+    .mdldark .mdl-color-text--accent {
+        color: #536dfe !important
+    }
+
+    .mdldark .mdl-color-text--accent-contrast {
+        color: #fff !important
+    }
+
+    .mdldark a {
+        color: #536dfe
+    }
+
+    .mdldark .mdl-badge[data-badge]:after {
+        background: #536dfe;
+        color: #fff
+    }
+
+    .mdldark .mdl-badge.mdl-badge--no-background[data-badge]:after {
+        color: #536dfe;
+        background: #fff
+    }
+
+    .mdldark .mdl-button {
+        background: transparent;
+        color: #fff
+    }
+
+        .mdldark .mdl-button:hover {
+            background-color: hsla(0,0%,62%,.2)
+        }
+
+        .mdldark .mdl-button:focus:not(:active) {
+            background-color: rgba(0,0,0,.12)
+        }
+
+        .mdldark .mdl-button:active {
+            background-color: hsla(0,0%,62%,.4)
+        }
+
+        .mdldark .mdl-button.mdl-button--colored {
+            color: #ffc107
+        }
+
+            .mdldark .mdl-button.mdl-button--colored:focus:not(:active) {
+                background-color: rgba(0,0,0,.12)
+            }
+
+    .mdldark .mdl-button--raised {
+        background: hsla(0,0%,62%,.2)
+    }
+
+        .mdldark .mdl-button--raised:active, .mdldark .mdl-button--raised:focus:not(:active) {
+            background-color: hsla(0,0%,62%,.4)
+        }
+
+        .mdldark .mdl-button--raised.mdl-button--colored {
+            background: #ffc107;
+            color: #fff8e1
+        }
+
+            .mdldark .mdl-button--raised.mdl-button--colored:active, .mdldark .mdl-button--raised.mdl-button--colored:focus:not(:active), .mdldark .mdl-button--raised.mdl-button--colored:hover {
+                background-color: #d39e00
+            }
+
+            .mdldark .mdl-button--raised.mdl-button--colored .mdl-ripple {
+                background: #fff8e1
+            }
+
+    .mdldark .mdl-button--fab {
+        background: hsla(0,0%,62%,.2)
+    }
+
+        .mdldark .mdl-button--fab:active, .mdldark .mdl-button--fab:focus:not(:active) {
+            background-color: hsla(0,0%,62%,.4)
+        }
+
+        .mdldark .mdl-button--fab.mdl-button--colored {
+            background: #536dfe;
+            color: #fff
+        }
+
+            .mdldark .mdl-button--fab.mdl-button--colored:active, .mdldark .mdl-button--fab.mdl-button--colored:focus:not(:active), .mdldark .mdl-button--fab.mdl-button--colored:hover {
+                background-color: #536dfe
+            }
+
+            .mdldark .mdl-button--fab.mdl-button--colored .mdl-ripple {
+                background: #fff
+            }
+
+    .mdldark .mdl-button--icon {
+        color: inherit
+    }
+
+    .mdldark .mdl-button--primary.mdl-button--primary {
+        color: #ffc107
+    }
+
+        .mdldark .mdl-button--primary.mdl-button--primary .mdl-ripple {
+            background: #fff8e1
+        }
+
+        .mdldark .mdl-button--primary.mdl-button--primary.mdl-button--fab, .mdldark .mdl-button--primary.mdl-button--primary.mdl-button--raised {
+            color: #fff8e1;
+            background-color: #ffc107
+        }
+
+    .mdldark .mdl-button--accent.mdl-button--accent {
+        color: #536dfe
+    }
+
+        .mdldark .mdl-button--accent.mdl-button--accent .mdl-ripple {
+            background: #fff
+        }
+
+        .mdldark .mdl-button--accent.mdl-button--accent.mdl-button--fab, .mdldark .mdl-button--accent.mdl-button--accent.mdl-button--raised {
+            color: #fff;
+            background-color: #536dfe
+        }
+
+    .mdldark .mdl-button.mdl-button--disabled.mdl-button--disabled, .mdldark .mdl-button[disabled][disabled] {
+        color: hsla(0,0%,100%,.26);
+        background-color: transparent
+    }
+
+    .mdldark .mdl-button--fab.mdl-button--disabled.mdl-button--disabled, .mdldark .mdl-button--fab[disabled][disabled], .mdldark .mdl-button--raised.mdl-button--disabled.mdl-button--disabled, .mdldark .mdl-button--raised[disabled][disabled] {
+        background-color: hsla(0,0%,100%,.12);
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-button--colored.mdl-button--disabled.mdl-button--disabled, .mdldark .mdl-button--colored[disabled][disabled] {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-slider.is-upgraded {
+        background: transparent;
+        color: #536dfe
+    }
+
+        .mdldark .mdl-slider.is-upgraded::-webkit-slider-runnable-track {
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-moz-range-track {
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-ms-track {
+            background: none;
+            color: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-ms-fill-lower {
+            background: linear-gradient(90deg,transparent,transparent 16px,#536dfe 0,#536dfe 0)
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-ms-fill-upper {
+            background: linear-gradient(270deg,transparent,transparent 16px,hsla(0,0%,100%,.87) 0,hsla(0,0%,100%,.87) 0)
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-webkit-slider-thumb {
+            background: #536dfe
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-moz-range-thumb {
+            background: #536dfe
+        }
+
+        .mdldark .mdl-slider.is-upgraded:focus:not(:active)::-webkit-slider-thumb {
+            box-shadow: 0 0 0 10px rgba(83,109,254,.5)
+        }
+
+        .mdldark .mdl-slider.is-upgraded:focus:not(:active)::-moz-range-thumb {
+            box-shadow: 0 0 0 10px rgba(83,109,254,.5)
+        }
+
+        .mdldark .mdl-slider.is-upgraded:active::-webkit-slider-thumb {
+            background: #536dfe
+        }
+
+        .mdldark .mdl-slider.is-upgraded:active::-moz-range-thumb {
+            background: #536dfe
+        }
+
+        .mdldark .mdl-slider.is-upgraded::-ms-thumb {
+            background: #536dfe
+        }
+
+        .mdldark .mdl-slider.is-upgraded:focus:not(:active)::-ms-thumb {
+            background: radial-gradient(circle closest-side,#536dfe 0,#536dfe 37.5%,rgba(83,109,254,.5) 0,rgba(83,109,254,.5) 100%)
+        }
+
+        .mdldark .mdl-slider.is-upgraded:active::-ms-thumb {
+            background: #536dfe
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value::-webkit-slider-thumb {
+            border-color: #536dfe;
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value::-moz-range-thumb {
+            border-color: hsla(0,0%,100%,.87);
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-webkit-slider-thumb {
+            box-shadow: 0 0 0 10px hsla(0,0%,100%,.5);
+            background: hsla(0,0%,100%,.5)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-moz-range-thumb {
+            box-shadow: 0 0 0 10px hsla(0,0%,100%,.5);
+            background: hsla(0,0%,100%,.5)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:active::-webkit-slider-thumb {
+            border-color: hsla(0,0%,100%,.87)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:active::-moz-range-thumb {
+            border-color: hsla(0,0%,100%,.87)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value::-ms-thumb {
+            background: radial-gradient(circle closest-side,transparent 0,transparent 66.67%,hsla(0,0%,100%,.87) 0,hsla(0,0%,100%,.87) 100%)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-ms-thumb {
+            background: radial-gradient(circle closest-side,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 25%,hsla(0,0%,100%,.87) 0,hsla(0,0%,100%,.87) 37.5%,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 100%)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:active::-ms-thumb {
+            background: radial-gradient(circle closest-side,transparent 0,transparent 77.78%,hsla(0,0%,100%,.87) 0,hsla(0,0%,100%,.87) 100%)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value::-ms-fill-lower {
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded:disabled::-webkit-slider-thumb, .mdldark .mdl-slider.is-upgraded:disabled:active::-webkit-slider-thumb, .mdldark .mdl-slider.is-upgraded:disabled:focus::-webkit-slider-thumb {
+            background: hsla(0,0%,100%,.87)
+        }
+
+        .mdldark .mdl-slider.is-upgraded:disabled::-moz-range-thumb, .mdldark .mdl-slider.is-upgraded:disabled:active::-moz-range-thumb, .mdldark .mdl-slider.is-upgraded:disabled:focus::-moz-range-thumb {
+            background: hsla(0,0%,100%,.87)
+        }
+
+        .mdldark .mdl-slider.is-upgraded:disabled + .mdl-slider__background-flex > .mdl-slider__background-lower {
+            background-color: hsla(0,0%,100%,.87)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled::-webkit-slider-thumb, .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled:active::-webkit-slider-thumb, .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled:focus::-webkit-slider-thumb {
+            border-color: hsla(0,0%,100%,.87);
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled::-moz-range-thumb, .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled:active::-moz-range-thumb, .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled:focus::-moz-range-thumb {
+            border-color: hsla(0,0%,100%,.87);
+            background: transparent
+        }
+
+        .mdldark .mdl-slider.is-upgraded:disabled::-ms-thumb, .mdldark .mdl-slider.is-upgraded:disabled:active::-ms-thumb, .mdldark .mdl-slider.is-upgraded:disabled:focus::-ms-thumb {
+            background: hsla(0,0%,100%,.87)
+        }
+
+        .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled::-ms-thumb, .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled:active::-ms-thumb, .mdldark .mdl-slider.is-upgraded.is-lowest-value:disabled:focus::-ms-thumb {
+            background: radial-gradient(circle closest-side,transparent 0,transparent 50%,hsla(0,0%,100%,.87) 0,hsla(0,0%,100%,.87) 100%)
+        }
+
+        .mdldark .mdl-slider.is-upgraded:disabled::-ms-fill-lower {
+            background: linear-gradient(90deg,transparent,transparent 25px,hsla(0,0%,100%,.87) 0,hsla(0,0%,100%,.87) 0)
+        }
+
+    .mdldark .mdl-slider__background-flex {
+        background: transparent
+    }
+
+    .mdldark .mdl-slider__background-lower {
+        background: #536dfe
+    }
+
+    .mdldark .mdl-slider__background-upper {
+        background: hsla(0,0%,100%,.87)
+    }
+
+    .mdldark .mdl-textfield__input {
+        border-bottom-color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-textfield.is-invalid .mdl-textfield__input {
+        border-color: #ff1744
+    }
+
+    .mdldark .mdl-textfield.is-disabled .mdl-textfield__input, .mdldark fieldset[disabled] .mdl-textfield .mdl-textfield__input {
+        background-color: transparent;
+        border-bottom-color: hsla(0,0%,100%,.12);
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-textfield__label {
+        color: hsla(0,0%,100%,.5)
+    }
+
+        .mdldark .mdl-textfield__label:after {
+            background-color: #536dfe
+        }
+
+    .mdldark .mdl-textfield.is-disabled.is-disabled .mdl-textfield__label, .mdldark fieldset[disabled] .mdl-textfield .mdl-textfield__label {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdldark .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdldark .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+        color: #536dfe
+    }
+
+    .mdldark .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+        color: #ff1744
+    }
+
+    .mdldark .mdl-textfield.is-invalid .mdl-textfield__label:after {
+        background-color: #ff1744
+    }
+
+    .mdldark .mdl-textfield__error {
+        color: #ff1744
+    }
+
+    .mdldark .mdl-checkbox__box-outline {
+        border-color: hsla(0,0%,100%,.5)
+    }
+
+    .mdldark .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+        border-color: #536dfe
+    }
+
+    .mdldark .mdl-checkbox.is-disabled .mdl-checkbox__box-outline, .mdldark fieldset[disabled] .mdl-checkbox .mdl-checkbox__box-outline {
+        border-color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-checkbox__focus-helper {
+        background-color: transparent
+    }
+
+    .mdldark .mdl-checkbox.is-focused.is-checked .mdl-checkbox__focus-helper {
+        box-shadow: 0 0 0 8px rgba(83,109,254,.26);
+        background-color: rgba(83,109,254,.26)
+    }
+
+    .mdldark .mdl-checkbox__tick-outline {
+        background: transparent
+    }
+
+    .mdldark .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+        background-color: #536dfe
+    }
+
+    .mdldark .mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline, .mdldark fieldset[disabled] .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+        background-color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-checkbox.is-disabled .mdl-checkbox__label, .mdldark fieldset[disabled] .mdl-checkbox .mdl-checkbox__label {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-checkbox__ripple-container .mdl-ripple {
+        background: #536dfe
+    }
+
+    .mdldark .mdl-checkbox.is-disabled .mdl-checkbox__ripple-container .mdl-ripple, .mdldark fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple {
+        background: transparent
+    }
+
+    .mdldark .mdl-radio__outer-circle {
+        border-color: hsla(0,0%,100%,.5)
+    }
+
+    .mdldark .mdl-radio.is-checked .mdl-radio__outer-circle {
+        border-color: #536dfe
+    }
+
+    .mdldark .mdl-radio.is-disabled .mdl-radio__outer-circle, .mdldark .mdl-radio__outer-circle fieldset[disabled] .mdl-radio {
+        border-color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-radio__inner-circle {
+        background: #536dfe
+    }
+
+    .mdldark .mdl-radio.is-disabled .mdl-radio__inner-circle, .mdldark fieldset[disabled] .mdl-radio .mdl-radio__inner-circle {
+        background: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-radio.is-disabled .mdl-radio__label, .mdldark fieldset[disabled] .mdl-radio .mdl-radio__label {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-radio__ripple-container .mdl-ripple {
+        background: #536dfe
+    }
+
+    .mdldark .mdl-radio.is-disabled .mdl-radio__ripple-container .mdl-ripple, .mdldark fieldset[disabled] .mdl-radio .mdl-radio__ripple-container .mdl-ripple {
+        background: transparent
+    }
+
+    .mdldark .mdl-icon-toggle__label {
+        color: #616161
+    }
+
+    .mdldark .mdl-icon-toggle.is-checked .mdl-icon-toggle__label {
+        color: #536dfe
+    }
+
+    .mdldark .mdl-icon-toggle.is-disabled .mdl-icon-toggle__label {
+        color: hsla(0,0%,100%,.5)
+    }
+
+    .mdldark .mdl-icon-toggle.is-focused .mdl-icon-toggle__label {
+        background-color: rgba(0,0,0,.12)
+    }
+
+    .mdldark .mdl-icon-toggle.is-focused.is-checked .mdl-icon-toggle__label {
+        background-color: rgba(83,109,254,.26)
+    }
+
+    .mdldark .mdl-icon-toggle__ripple-container .mdl-ripple {
+        background: #616161
+    }
+
+    .mdldark .mdl-icon-toggle.is-disabled .mdl-icon-toggle__ripple-container .mdl-ripple {
+        background: transparent
+    }
+
+    .mdldark .mdl-switch__track {
+        background: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdl-switch.is-checked .mdl-switch__track {
+        background: rgba(83,109,254,.5)
+    }
+
+    .mdldark .mdl-switch.is-disabled .mdl-switch__track, .mdldark .mdl-switch__track fieldset[disabled] .mdl-switch {
+        background: hsla(0,0%,100%,.12)
+    }
+
+    .mdldark .mdl-switch__thumb {
+        background: #fafafa
+    }
+
+    .mdldark .mdl-switch.is-checked .mdl-switch__thumb {
+        background: #536dfe
+    }
+
+    .mdldark .mdl-switch.is-disabled .mdl-switch__thumb, .mdldark .mdl-switch__thumb fieldset[disabled] .mdl-switch {
+        background: #fafafa
+    }
+
+    .mdldark .mdl-switch__focus-helper {
+        background-color: transparent
+    }
+
+    .mdldark .mdl-switch.is-focused .mdl-switch__focus-helper {
+        background-color: rgba(0,0,0,.1)
+    }
+
+    .mdldark .mdl-switch.is-focused.is-checked .mdl-switch__focus-helper {
+        box-shadow: 0 0 0 20px rgba(83,109,254,.26);
+        background-color: rgba(83,109,254,.26)
+    }
+
+    .mdldark .mdl-switch.is-disabled .mdl-switch__label, .mdldark .mdl-switch__label fieldset[disabled] .mdl-switch {
+        color: #fafafa
+    }
+
+    .mdldark .mdl-switch__ripple-container .mdl-ripple {
+        background: #536dfe
+    }
+
+    .mdldark .mdl-switch.is-disabled .mdl-switch__ripple-container .mdl-ripple, .mdldark fieldset[disabled] .mdl-switch .mdl-switch__ripple-container .mdl-ripple {
+        background: transparent
+    }
+
+    .mdldark .mdl-data-table {
+        border-color: hsla(0,0%,100%,.12);
+        background-color: #303030
+    }
+
+        .mdldark .mdl-data-table tbody tr.is-selected {
+            background-color: #424242
+        }
+
+        .mdldark .mdl-data-table tbody tr:hover {
+            background-color: #212121
+        }
+
+        .mdldark .mdl-data-table th, .mdldark .mdl-data-table th.mdl-data-table__header--sorted-ascending, .mdldark .mdl-data-table th.mdl-data-table__header--sorted-descending {
+            color: hsla(0,0%,100%,.87)
+        }
+
+            .mdldark .mdl-data-table th.mdl-data-table__header--sorted-ascending:hover:before, .mdldark .mdl-data-table th.mdl-data-table__header--sorted-descending:hover:before {
+                color: hsla(0,0%,100%,.26)
+            }
+
+    .mdldark .mdl-menu__outline {
+        background: #000
+    }
+
+    .mdldark .mdl-menu__item {
+        color: hsla(0,0%,100%,.87);
+        background-color: transparent;
+        outline-color: #616161
+    }
+
+    .mdldark .mdl-menu__item--full-bleed-divider {
+        border-bottom-color: hsla(0,0%,100%,.2)
+    }
+
+    .mdldark .mdl-menu__item[data-mdl-disabled], .mdldark .mdl-menu__item[disabled] {
+        color: #9e9e9e;
+        background-color: transparent
+    }
+
+        .mdldark .mdl-menu__item[data-mdl-disabled]:focus, .mdldark .mdl-menu__item[data-mdl-disabled]:hover, .mdldark .mdl-menu__item[disabled]:focus, .mdldark .mdl-menu__item[disabled]:hover {
+            background-color: transparent
+        }
+
+        .mdldark .mdl-menu__item[data-mdl-disabled] .mdl-ripple, .mdldark .mdl-menu__item[disabled] .mdl-ripple {
+            background: transparent
+        }
+
+    .mdldark .mdl-menu__item:focus, .mdldark .mdl-menu__item:hover {
+        background-color: #212121
+    }
+
+    .mdldark .mdl-menu__item:active {
+        background-color: #424242
+    }
+
+    .mdldark .mdl-card {
+        background: #303030
+    }
+
+    .mdldark .mdl-card__media {
+        background-color: #536dfe
+    }
+
+    .mdldark .mdl-card__title {
+        color: #fff
+    }
+
+        .mdldark .mdl-card__title.mdl-card--border {
+            border-bottom-color: rgba(0,0,0,.1)
+        }
+
+    .mdldark .mdl-card__title-text {
+        color: inherit
+    }
+
+    .mdldark .mdl-card__subtitle-text {
+        color: rgba(0,0,0,.7)
+    }
+
+    .mdldark .mdl-card__supporting-text {
+        color: hsla(0,0%,100%,.7)
+    }
+
+    .mdldark .mdl-card__actions {
+        background-color: hsla(0,0%,100%,0)
+    }
+
+        .mdldark .mdl-card__actions.mdl-card--border {
+            border-top-color: rgba(0,0,0,.1)
+        }
+
+    .mdldark .mdlext-selectfield.is-disabled:after {
+        color: hsla(0,0%,100%,.12);
+        content: "";
+        width: 0;
+        height: 0;
+        font-size: inherit;
+        line-height: inherit;
+        border-top: .5em solid hsla(0,0%,100%,.12);
+        border-top-width: .5em;
+        border-top-style: solid;
+        border-top-color: hsla(0,0%,100%,.12);
+        border-left: .35em solid transparent;
+        border-right: .35em solid transparent
+    }
+
+    .mdldark .mdlext-selectfield__select {
+        border-bottom-color: hsla(0,0%,100%,.26);
+        color: inherit
+    }
+
+        .mdldark .mdlext-selectfield__select option {
+            background-color: #303030;
+            color: #fff
+        }
+
+    .mdldark .mdlext-selectfield.is-invalid .mdlext-selectfield__select {
+        border-color: #ff1744
+    }
+
+    .mdldark .mdlext-selectfield.is-disabled .mdlext-selectfield__select, .mdldark fieldset[disabled] .mdlext-selectfield .mdlext-selectfield__select {
+        background-color: transparent;
+        border-bottom-color: hsla(0,0%,100%,.12);
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdlext-selectfield__label {
+        color: hsla(0,0%,100%,.5)
+    }
+
+    .mdldark .mdlext-selectfield.is-disabled.is-disabled .mdlext-selectfield__label, .mdldark fieldset[disabled] .mdlext-selectfield .mdlext-selectfield__label {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdlext-selectfield--floating-label.has-placeholder .mdlext-selectfield__label, .mdldark .mdlext-selectfield--floating-label.is-dirty.is-dirty .mdlext-selectfield__label, .mdldark .mdlext-selectfield--floating-label.is-dirty .mdlext-selectfield__label, .mdldark .mdlext-selectfield--floating-label.is-focused .mdlext-selectfield__label {
+        color: #536dfe
+    }
+
+    .mdldark .mdlext-selectfield--floating-label.is-invalid .mdlext-selectfield__label {
+        color: #ff1744
+    }
+
+    .mdldark .mdlext-selectfield__label:after {
+        background-color: #536dfe
+    }
+
+    .mdldark .mdlext-selectfield.is-invalid .mdlext-selectfield__label:after {
+        background-color: #ff1744
+    }
+
+    .mdldark .mdlext-selectfield__error {
+        color: #ff1744
+    }
+
+    .mdldark .mdlext-menu, .mdlext-menu.mdldark {
+        background: #000
+    }
+
+    .mdldark .mdlext-menu__item {
+        color: hsla(0,0%,100%,.87);
+        background-color: #000
+    }
+
+        .mdldark .mdlext-menu__item:active, .mdldark .mdlext-menu__item[aria-selected=true] {
+            background-color: #424242
+        }
+
+        .mdldark .mdlext-menu__item:hover:not([disabled]) {
+            background-color: #212121
+        }
+
+        .mdldark .mdlext-menu__item:focus {
+            outline-color: #616161;
+            background-color: #212121
+        }
+
+        .mdldark .mdlext-menu__item[disabled], .mdldark .mdlext-menu__item[disabled] > * {
+            color: #9e9e9e
+        }
+
+    .mdldark .mdlext-menu__item-separator {
+        border-bottom: 1px solid hsla(0,0%,100%,.2)
+    }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield .mdl-textfield__input, .mdldark .mdlext-bordered-fields .mdl-textfield .mdlext-selectfield__select, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdl-textfield__input, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdlext-selectfield__select {
+        background-color: rgba(48,48,48,.1);
+        border-color: hsla(0,0%,100%,.26);
+        color: inherit
+    }
+
+        .mdldark .mdlext-bordered-fields .mdl-textfield .mdl-textfield__input:disabled, .mdldark .mdlext-bordered-fields .mdl-textfield .mdlext-selectfield__select:disabled, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdl-textfield__input:disabled, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdlext-selectfield__select:disabled {
+            color: hsla(0,0%,100%,.26);
+            background-color: rgba(48,48,48,.1);
+            border-color: hsla(0,0%,100%,.12)
+        }
+
+        .mdldark .mdlext-bordered-fields .mdl-textfield .mdl-textfield__input:focus, .mdldark .mdlext-bordered-fields .mdl-textfield .mdlext-selectfield__select:focus, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdl-textfield__input:focus, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdlext-selectfield__select:focus {
+            background-color: hsla(0,0%,9%,.1);
+            border-color: #536dfe
+        }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield.is-invalid .mdl-textfield__input, .mdldark .mdlext-bordered-fields .mdl-textfield.is-invalid .mdlext-selectfield__select, .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-invalid .mdl-textfield__input, .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-invalid .mdlext-selectfield__select {
+        color: inherit;
+        border-color: #ff1744;
+        background-color: rgba(255,23,68,.1)
+    }
+
+        .mdldark .mdlext-bordered-fields .mdl-textfield.is-invalid .mdl-textfield__input:focus, .mdldark .mdlext-bordered-fields .mdl-textfield.is-invalid .mdlext-selectfield__select:focus, .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-invalid .mdl-textfield__input:focus, .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-invalid .mdlext-selectfield__select:focus {
+            border-color: #e3002c;
+            background-color: rgba(255,23,68,.1)
+        }
+
+    .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-disabled:after, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdlext-selectfield:after {
+        color: hsla(0,0%,100%,.26);
+        content: "";
+        width: 0;
+        height: 0;
+        font-size: inherit;
+        line-height: inherit;
+        border-top: .5em solid hsla(0,0%,100%,.26);
+        border-top-width: .5em;
+        border-top-style: solid;
+        border-top-color: hsla(0,0%,100%,.26);
+        border-left: .35em solid transparent;
+        border-right: .35em solid transparent
+    }
+
+    .mdldark .mdlext-bordered-fields fieldset[disabled] .mdl-textfield .mdl-textfield__input, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdlext-selectfield .mdlext-selectfield__select {
+        color: hsla(0,0%,100%,.26);
+        background-color: rgba(48,48,48,.1);
+        border-color: hsla(0,0%,100%,.12)
+    }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield .mdlext-selectfield__label {
+        color: hsla(0,0%,100%,.5)
+    }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.has-placeholder .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-dirty.is-dirty .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-dirty.is-dirty .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-focused.is-focused .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-focused.is-focused .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.has-placeholder .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.has-placeholder .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-dirty.is-dirty .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-dirty.is-dirty .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-focused.is-focused .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-focused.is-focused .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.has-placeholder .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-dirty.is-dirty .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-dirty.is-dirty .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-focused.is-focused .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-focused.is-focused .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.has-placeholder .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.has-placeholder .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-dirty.is-dirty .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-dirty.is-dirty .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-focused.is-focused .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-focused.is-focused .mdlext-selectfield__label {
+        color: #536dfe
+    }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-disabled.is-disabled .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-disabled.is-disabled .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-disabled.is-disabled .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-disabled.is-disabled .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-disabled.is-disabled .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-disabled.is-disabled .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-disabled.is-disabled .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-disabled.is-disabled .mdlext-selectfield__label {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-invalid.is-invalid .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdl-textfield--floating-label.is-invalid.is-invalid .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-invalid.is-invalid .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdl-textfield.mdlext-selectfield--floating-label.is-invalid.is-invalid .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-invalid.is-invalid .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdl-textfield--floating-label.is-invalid.is-invalid .mdlext-selectfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-invalid.is-invalid .mdl-textfield__label, .mdldark .mdlext-bordered-fields .mdlext-selectfield.mdlext-selectfield--floating-label.is-invalid.is-invalid .mdlext-selectfield__label {
+        color: #ff1744
+    }
+
+    .mdldark .mdlext-bordered-fields fieldset[disabled] .mdl-selectfield .mdl-selectfield__label, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdl-textfield .mdl-textfield__label {
+        color: hsla(0,0%,100%,.26)
+    }
+
+    .mdldark .mdlext-bordered-fields .mdl-textfield.is-disabled .mdl-button, .mdldark .mdlext-bordered-fields .mdl-textfield.is-disabled i, .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-disabled .mdl-button, .mdldark .mdlext-bordered-fields .mdlext-selectfield.is-disabled i, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdl-textfield .mdl-button, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdl-textfield i, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdlext-selectfield .mdl-button, .mdldark .mdlext-bordered-fields fieldset[disabled] .mdlext-selectfield i {
+        color: hsla(0,0%,100%,.12)
+    }
+
+    .mdldark .mdlext-accordion__tab {
+        color: #fff;
+        background-color: #000
+    }
+
+        .mdldark .mdlext-accordion__tab:focus {
+            outline-color: #a8a8a8
+        }
+
+        .mdldark .mdlext-accordion__tab[aria-expanded=true] {
+            background-color: rgba(0,0,0,.9)
+        }
+
+        .mdldark .mdlext-accordion__tab[aria-selected=true] {
+            background-color: rgba(0,0,0,.6)
+        }
+
+        .mdldark .mdlext-accordion__tab[disabled] {
+            background-color: rgba(0,0,0,.4);
+            color: hsla(0,0%,100%,.5);
+            pointer-events: none
+        }
+
+            .mdldark .mdlext-accordion__tab[disabled] > * {
+                color: hsla(0,0%,100%,.5)
+            }
+
+        .mdldark .mdlext-accordion__tab:hover:not([disabled]) {
+            background-color: rgba(0,0,0,.5)
+        }
+
+    .mdldark .mdlext-accordion__tab--ripple[aria-selected=true]:before {
+        background: rgba(0,0,0,.3)
+    }
+
+    .mdldark .mdlext-accordion__tabpanel {
+        color: inherit;
+        background-color: transparent
+    }
+
+    .mdldark .mdlext-accordion--vertical .mdlext-accordion__tab {
+        border-top: 1px solid #424242
+    }
+
+        .mdldark .mdlext-accordion--vertical .mdlext-accordion__tab[aria-selected=true]:after {
+            background-color: #a8a8a8
+        }
+
+    .mdldark .mdlext-accordion--vertical .mdlext-accordion__tabpanel {
+        border-top: 1px solid #424242
+    }
+
+    .mdldark .mdlext-accordion--horizontal .mdlext-accordion__tab {
+        border-left: 1px solid #424242
+    }
+
+        .mdldark .mdlext-accordion--horizontal .mdlext-accordion__tab[aria-selected=true]:after {
+            background-color: #a8a8a8
+        }
+
+    .mdldark .mdlext-accordion--horizontal .mdlext-accordion__tabpanel {
+        border-left: 1px solid #424242
+    }
+
+    .mdldark .mdlext-accordion__panel:first-child > .mdldark .mdlext-accordion__tab {
+        border-top-color: transparent;
+        border-left-color: transparent
+    }
+
+    .mdldark .mdlext-accordion[disabled] .mdlext-accordion__tab {
+        background-color: rgba(0,0,0,.4);
+        color: hsla(0,0%,100%,.5)
+    }
+
+        .mdldark .mdlext-accordion[disabled] .mdlext-accordion__tab > * {
+            color: hsla(0,0%,100%,.5)
+        }
+
+    .mdldark .mdlext-accordion[disabled] .mdlext-accordion__tabpanel {
+        opacity: .8;
+        filter: blur(1px) grayscale(80%)
+    }
+    .mdldark .mdl-typography--display-1, .mdldark .mdl-tabs__tab.is-active, .mdldark .mdl-list *, .mdldark .mdl-data-table * {
+        color: hsla(0, 0%, 100%, .7) !important;
+    }

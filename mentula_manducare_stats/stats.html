@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="Content/stats.css" rel="stylesheet"/>
+        <script src="Scripts/jquery-1.6.4.min.js"></script>
+        <script src="Scripts/jquery.signalR-2.4.1.min.js"></script>
+        <script src="Scripts/stats.js" type="text/javascript"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded',
+                function () {
+                    window["MentulaExtra"] = new MentulaExtra();
+                    window["MentulaStats"] = new MentulaStats(function (result) {
+                        for (var key in result) {
+                            var id = "a" + key.replace(/\s/g, "").replace(/!/g, "");
+                            if (document.querySelector("#" + id) === null) {
+                                var newElm = document.getElementById('container-template').content.cloneNode(true);
+                                newElm.querySelector('div').id = id;
+                                newElm.querySelector('.server-title').innerHTML = key;
+                                document.body.appendChild(newElm);
+                            }
+                            var elm = document.querySelector("#" + id);
+
+
+                            elm.querySelector('[data-elm="status"]').innerHTML =
+                                window["MentulaExtra"].localizeStatus(result[key]["Status"]["GameState"]);
+                            elm.querySelector('[data-elm="currentmap"]').innerHTML =
+                                window["MentulaExtra"].localizeMapName(result[key]["Status"]["CurrentMap"]);
+                            elm.querySelector('[data-elm="currentvariant"]').innerHTML =
+                                result[key]["Status"]["CurrentName"];
+                            elm.querySelector('[data-elm="nextmap"]').innerHTML =
+                                window["MentulaExtra"].localizeMapName(result[key]["Status"]["NextMap"]);
+                            elm.querySelector('[data-elm="nextvariant"]').innerHTML =
+                                result[key]["Status"]["NextName"];
+
+                            var ptable = elm.querySelector('table tbody');
+                            ptable.querySelectorAll('[data-name]').forEach(function(row) {
+                                row.setAttribute('data-keep', '0');
+                            });
+                            for (var akey in result[key]["Players"]) {
+                                if (ptable.querySelector('[data-name="' + akey + '"]') === null) {
+                                    var newRow = document.createElement('tr');
+                                    newRow.setAttribute('data-keep', '1');
+                                    newRow.append(document.createElement('td'));
+                                    newRow.append(document.createElement('td'));
+                                    newRow.setAttribute('data-name', akey);
+                                    newRow.querySelectorAll('td')[0].innerHTML = akey;
+                                    newRow.querySelectorAll('td')[1].innerHTML =
+                                        result[key]["Players"][akey].split(',')[0];
+                                    ptable.append(newRow);
+                                } else {
+                                    ptable.querySelector('[data-name="' + akey + '"]').setAttribute('data-keep', '1');
+                                    ptable.querySelectorAll('[data-name="' + akey + '"] td')[1].innerHTML =
+                                        result[key]["Players"][akey].split(',')[0];
+                                }
+                            }
+                            ptable.querySelectorAll('[data-keep="0"]').forEach(function(row) {
+                                row.outerHTML = "";
+                            });
+                        }
+                    });
+
+                    window.setInterval(function () {
+                        window["MentulaStats"].GetStats();
+                    }, 5000);
+                });
+        </script>
+    </head>
+    <body>
+
+
+        <template id="container-template">
+            <div class="server-container">
+                <h2 class="server-title">
+
+                </h2>
+                <div class="status-container">
+                    <p>Status:</p>
+                    <pre data-elm="status"></pre>
+                    <p>Current Map:</p>
+                    <pre data-elm="currentmap"></pre>
+                    <p>Current Variant:</p>
+                    <pre data-elm="currentvariant"></pre>
+                    <p>Next Map:</p>
+                    <pre data-elm="nextmap"></pre>
+                    <p>Next Variant:</p>
+                    <pre data-elm="nextvariant"></pre>
+                </div>
+                <div class="player-container">
+                    <table>
+                        <tbody>
+                            <tr data-keep="2">
+                                <th>Player</th>
+                                <th>Score</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </body>
+</html>
+

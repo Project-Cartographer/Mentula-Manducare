@@ -1,0 +1,487 @@
+﻿<html>
+<head>
+    <title>H2Pineapple</title>
+    <script src="Scripts/mdl.js"></script>
+    <link rel="stylesheet" href="Content/mdl.css" />
+    <link rel="stylesheet" href="Content/mdldark.css"/>
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="Content/Material-Select.css" />
+    <script src="Scripts/jquery.signalR-2.4.1.min.js"></script>
+    <script src="Scripts/Material-Better-Tooltip.js"></script>
+    <script src="Scripts/Material-Select.js"></script>
+    <script src="Scripts/mentula-extra.js"></script>
+    <script src="Scripts/dialog-polyfill.js"></script>
+    <script src="Scripts/mentula.js"></script>
+    <link rel="stylesheet" href="Content/mentula.css" />
+</head>
+<body>
+
+    <dialog id="loginDialog" class="mdl-dialog">
+        <h3 class="mdl-dialog__title">Pineapple Login</h3>
+        <div class="mdl-dialog__content">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="serverHost">
+                <label class="mdl-textfield__label" for="sample1">Server IP/Port</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="serverPassword">
+                <label class="mdl-textfield__label" for="sample1">Password</label>
+            </div>
+            <p>Make sure you are running the latest version which has auto-updating!</p>
+            <p><a href="http://halo2pc.com/mentula/monitor/2.3.7.zip">Download Here!</a></p>
+			
+            <p>Want to add stats to your website? Download the package <a href="http://halo2pc.com/mentula/stats/mentula_manducare_stats.zip">here</a></p>
+            <p>You can view an example <a href="http://halo2pc.com/mentula/stats">here</a></p>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button id="serverConnect" type="button" class="mdl-button">Connect</button>
+        </div>
+    </dialog>
+
+    <dialog id="hexValuesDialog" class="mdl-dialog">
+        <h3 class="mdl-dialog__title">Hex Values</h3>
+        <div class="mdl-dialog__content">
+            <b>:::::RANDOM:::::::</b>
+            <p>00F0=Apple Logo</p>
+            <p>9403=Delta</p>
+            <p>A903=Omega</p>
+            <p>BC03=Mew</p>
+            <p>2020=Stigmata</p>
+            <p>2120=Dual Stigmata</p>
+            <p>2220=Bullet Point</p>
+            <p>0F22=Door Frame</p>
+            <p>2221=TM</p>
+            <p>9201=Fancy F</p>
+            <p>A900=Copyright</p>
+            <p>1122=Greek E</p>
+            <p>1A22=Square Root</p>
+            <p>1E22=Infinity</p>
+            <p>2B22=Some Thing.</p>
+            <b>::::: KEYBOARD :::::</b>
+            <p>00E0=Wink ;)</p>
+            <p>02E0=Neutral :|</p>
+            <p>01E0=Big Smile :D</p>
+            <p>04E0=Tounge :P</p>
+            <p>0526=Star</p>
+            <p>9126=Flag # By MasterOmok</p>
+            <p>1327=Check</p>
+            <p>1727=X Symbol</p>
+            <b>::::: MISCELLANEOUS :::::</b>
+            <p>05E0=Camera</p>
+            <p>06E0=Guest</p>
+            <p>07E0=Downloadable Content</p>
+            <p>08E0=Lock    </p>
+            <b>::::: INGAME MEDALS :::::</b>
+            <p>33E0=Killing Spree</p>
+            <p>34E0=Running Riot</p>
+            <p>35E0=Rampage</p>
+            <p>36E0=Beserker</p>
+            <p>37E0=Overkill</p>
+            <p>38E0=Double Kill</p>
+            <p>39E0=Triple Kill</p>
+            <p>40E0=Killtacular</p>
+            <p>41E0=Kill Frenzy</p>
+            <p>42E0=Killtrocity</p>
+            <p>43E0=Killamanjaro</p>
+            <p>44E0=Sniper Kill</p>
+            <p>45E0=Roadkill</p>
+            <p>46E0=Bonecracker</p>
+            <p>47E0=Assassin</p>
+            <p>48E0=Stick It</p>
+            <p>49E0=Flag Carrier Kill</p>
+            <p>50E0=Oddball Carrier Kill</p>
+            <p>51E0=Bomb Carrier Kill</p>
+            <p>52E0=(Do Not Enter?)</p>
+            <p>53E0=Carjacking</p>
+            <p>54E0=Flag Taken</p>
+            <p>55E0=Bomb Taken</p>
+            <p>56E0=Flag captured</p>
+            <p>57E0=Bomb Planted</p>
+            <p>58E0=Flag Returned</p>
+            <p>59E0=Bomb Returned</p>
+            <p>60E0=Question Mark        </p>
+            <b>::::: POSTGAME MEDALS :::::</b>
+            <p>65E0=Killing Spree | P |</p>
+            <p>66E0=Running Riot | P |</p>
+            <p>67E0=Rampage | P |</p>
+            <p>68E0=Beserker | P |</p>
+            <p>69E0=Overkill | P |</p>
+            <p>70E0=Double Kill | P |</p>
+            <p>71E0=Triple Kill | P |</p>
+            <p>72E0=Killtacular | P |</p>
+            <p>73E0=Kill Frenzy | P |</p>
+            <p>74E0=Killtrocity | P |</p>
+            <p>75E0=Killamanjaro | P |</p>
+            <p>76E0=Sniper Kill | P |</p>
+            <p>77E0=Roadkill | P |</p>
+            <p>78E0=Bonecracker | P |</p>
+            <p>79E0=Assassin | P |</p>
+            <p>80E0=Stick It | P |</p>
+            <p>81E0=Carjacking | P |</p>
+            <p>82E0=(Do Not Enter) | P |</p>
+            <p>83E0=Flag Carrier Kill | P |</p>
+            <p>84E0=Oddball Carrier Kill | P |</p>
+            <p>85E0=Bomb Carrier Kill | P |</p>
+            <p>86E0=Flag Taken | P |</p>
+            <p>87E0=Bomb Taken | P |</p>
+            <p>88E0=Flag Captured | P |</p>
+            <p>89E0=Bomb Planted | P |</p>
+            <p>90E0=Flag Returned | P |</p>
+            <p>91E0=Bomb Returned | P |</p>
+            <p>92E0=Large Question Mark | P |</p>
+            <b>::::: BUTTONS :::::</b>
+            <p>00E1=A Button</p>
+            <p>01E1=B Button</p>
+            <p>02E1=X Button</p>
+            <p>03E1=Y Button</p>
+            <p>04E1=Black Button</p>
+            <p>05E1=White Button</p>
+            <p>0CE1=Start</p>
+            <p>0DE1=Back</p>
+            <p>06E1=Left Trigger</p>
+            <p>07E1=Right Trigger</p>
+            <p>08E1=Up</p>
+            <p>09E1=Down</p>
+            <p>0AE1=Left</p>
+            <p>0BE1=Right</p>
+            <p>2DE1=Left Thumbstick</p>
+            <p>10E1=Left Thumb Stick (Up)</p>
+            <p>0EE1=Left Thumb Stick (Down)</p>
+            <p>59E4=L Thumbstick (Animated)</p>
+            <p>30E1=Right Thumbstick</p>
+            <p>11E1=Right Thumb Stick (Up)</p>
+            <p>0FE1=Right Thumb Stick (Down)</p>
+            <p>5AE4=R Thumbstick (Animated) </p>
+            <b>::::: WEAPONS :::::</b>
+            <p>16E1=Flag</p>
+            <p>13E1=Bomb</p>
+            <p>1CE1=Oddball</p>
+            <p>1AE1=Magnum</p>
+            <p>22E1=SMG</p>
+            <p>2BE1=SMG (Longer Barrell)</p>
+            <p>12E1=Battle Rifle</p>
+            <p>21E1=Shotgun</p>
+            <p>23E1=Sniper Rifle</p>
+            <p>20E1=Rocket Launcher</p>
+            <p>1DE1=Plasma Pistol</p>
+            <p>1EE1=Plasma Rifle</p>
+            <p>2AE1=(Brute) Plasma Rifle</p>
+            <p>1BE1=Needler</p>
+            <p>15E1=Carbine</p>
+            <p>14E1=Brute Shot</p>
+            <p>1FE1=Plasma Sword</p>
+            <p>24E1=Beam Rifle</p>
+            <p>17E1=Fuel Rod Gun</p>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button close">Close</button>
+        </div>
+    </dialog>
+
+    <div id="layout" class="mdl-js-layout mdl-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">H2Pineapple</span>
+                <label class="enableDark mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="enableDark">
+                    <input type="checkbox" id="enableDark" class="mdl-icon-toggle__input" checked>
+                    <i class="mdl-icon-toggle__label material-icons">highlight</i>
+                </label>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var dark = document.querySelector('#enableDark');
+                        dark.addEventListener('change', function () {
+                            //flip flop for state
+                            if (!this.checked)
+                                document.querySelector('.mdl-layout__content').classList.add("mdldark");
+                            else
+                                document.querySelector('.mdl-layout__content').classList.remove("mdldark");
+                        });
+                    });
+                </script>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+
+        </main>
+    </div>
+    <template id="ServerContentsTemplate">
+        <div class="status-card">
+            <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">Playing: Lockout</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                <p>
+                    <b>Current Variant</b>
+                    <pre data-elm="currentvariant"></pre>
+                </p>
+
+                <p>
+                    <b>Next Variant</b>
+                    <pre data-elm="nextvariant"></pre>
+                </p>
+                <p>
+                    <b>Playlist</b>
+                    <pre data-elm="currentplaylist"></pre>
+                </p>
+                <div class="server_lobby_control_container">
+                    <label for="server_lobby_control" class="server-freeze-lobby mdl-switch mdl-js-switch mdl-js-ripple-effect">
+                        <input type="checkbox" id="server_lobby_control" class="mdl-switch__input">
+                        <span class="mdl-switch__label">Freeze Lobby</span>
+                    </label>
+                    <a class="server-force-start mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Start Game
+                    </a>
+                </div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mentula-skip mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Skip
+                </a>
+                <a class="mentula-stop mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Stop
+                </a>
+                <a class="mentula-restart mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Restart
+                </a>
+                <div class="playlist-container">
+                    <ul class="mdl-list">
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="playerlist-container">
+            <table class="player-table mdl-data-table mdl-js-data-table">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Emblem</th>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Team</th>
+                        <th class="mdl-data-table__cell--non-numeric">Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="middle-container">
+            <div class="banlist-container">
+                <h4 class="mdl-typography--display-1">Ban List <i class="material-icons">refresh</i></h4>
+                <div class="banlist mdl-list">
+
+                </div>
+                <div class="ban-add">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--slim">
+                        <input class="mdl-textfield__input" type="text">
+                        <label class="mdl-textfield__label" for="sample1">Player Name...</label>
+                    </div>
+                    <button class="mdl-button mdl-button--mini-fab mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                        <i class="material-icons">add</i>
+                    </button>
+                </div>
+            </div>
+            <div class="vip-container">
+                <h4 class="mdl-typography--display-1">VIP List <i class="material-icons">refresh</i></h4>
+                <div class="viplist mdl-list">
+
+                </div>
+                <div class="vip-add">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--slim">
+                        <input class="mdl-textfield__input" type="text">
+                        <label class="mdl-textfield__label" for="sample1">Player Name...</label>
+                    </div>
+                    <button class="mdl-button mdl-button--mini-fab mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                        <i class="material-icons">add</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-one">
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                    <div class="mdl-tabs__tab-bar">
+                        <a href="#server-log" class="mdl-tabs__tab is-active">Server Logs</a>
+                        <a href="#server-messages" class="mdl-tabs__tab">Server Messages</a>
+                    </div>
+                    <div class="mdl-tabs__panel is-active" id="server-log">
+                        <button class="server-refresh mdl-js-ripple-effect mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                            <i class="material-icons">refresh</i>
+                        </button>
+                        <div class="log-container">
+                            <div class="log">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-tabs__panel is-active" id="server-messages">
+                        <div class="messages-container">
+                            <ul class="mdl-list">
+                            </ul>
+                        </div>
+                        <div class="messages-input">
+                            <div class="messages-message mdl-textfield mdl-js-textfield mdl-textfield--slim">
+                                <input maxlength="120" class="mdl-textfield__input" type="text">
+                                <label class="mdl-textfield__label" for="sample1">Message</label>
+                            </div>
+                            <div data-mdl-tooltip="Value has to be in the format HH:MM (00:01) is 1 minute" class="messages-duration mdl-textfield mdl-js-textfield mdl-textfield--slim">
+                                <input pattern="^([01]\d|2[0-3]):?([0-5]\d)$"  class="mdl-textfield__input" type="text">
+                                <label class="mdl-textfield__label" for="sample1">Duration</label>
+                            </div>
+                            <label class="messages-all mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">All</span>
+                            </label>
+                            <button class="messages-add mdl-button mdl-button--mini-fab mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                                <i class="material-icons">add</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-two">
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                    <div class="mdl-tabs__tab-bar">
+                        <a href="#server_settings" class="mdl-tabs__tab is-active">Settings</a>
+                        <a href="#server_modifiers" class="mdl-tabs__tab">Modifiers</a>
+                    </div>
+                    <div class="mdl-tabs__panel is-active" id="server_settings">
+                        <div class="server-privacy mdl-select mdl-js-select mdl-textfield mdl-js-textfield mdl-textfield--floating-label" data-type="simple" data-width="150">
+                            <input id="server_privacy" class="mdl-textfield__input" type="text" />
+                            <label for="server_privacy" class="mdl-textfield__label">
+                                Privacy
+                            </label>
+                            <ul>
+                                <li class="mdl-menu__item" data-value="Open">Open</li>
+                                <li class="mdl-menu__item" data-value="VIP">VIP</li>
+                                <li class="mdl-menu__item" data-value="Closed">Closed</li>
+                            </ul>
+                        </div>
+                        <div class="server-biped mdl-select mdl-js-select mdl-textfield mdl-js-textfield mdl-textfield--floating-label" data-type="simple" data-width="150">
+                            <input id="server_biped" class="mdl-textfield__input" type="text" />
+                            <label for="server_biped" class="mdl-textfield__label">
+                                Forced Biped
+                            </label>
+                            <ul>
+                                <li class="mdl-menu__item" data-value="Disabled">None</li>
+                                <li class="mdl-menu__item" data-value="Master_Chief">SP Spartan</li>
+                                <li class="mdl-menu__item" data-value="Spartan">MP Spartan</li>
+                                <li class="mdl-menu__item" data-value="Elite">Elite</li>
+                            </ul>
+                        </div>
+                        <div class="server-max-players mdl-select mdl-js-select mdl-textfield mdl-js-textfield mdl-textfield--floating-label" data-type="simple" data-width="150">
+                            <input id="server_players" class="mdl-textfield__input" type="text" />
+                            <label for="server_players" class="mdl-textfield__label">
+                                Max Players
+                            </label>
+                            <ul>
+                                <li class="mdl-menu__item">1</li>
+                                <li class="mdl-menu__item">2</li>
+                                <li class="mdl-menu__item">3</li>
+                                <li class="mdl-menu__item">4</li>
+                                <li class="mdl-menu__item">5</li>
+                                <li class="mdl-menu__item">6</li>
+                                <li class="mdl-menu__item">7</li>
+                                <li class="mdl-menu__item">8</li>
+                                <li class="mdl-menu__item">9</li>
+                                <li class="mdl-menu__item">10</li>
+                                <li class="mdl-menu__item">11</li>
+                                <li class="mdl-menu__item">12</li>
+                                <li class="mdl-menu__item">13</li>
+                                <li class="mdl-menu__item">14</li>
+                                <li class="mdl-menu__item">15</li>
+                                <li class="mdl-menu__item">16</li>
+                            </ul>
+                        </div>
+                        <div class="server-xdelay-timer mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" value="10" type="text" pattern="^\d+$" id="server_xdely_timer">
+                            <label class="mdl-textfield__label" for="server_xdely_timer">XDelay Timer</label>
+                            <span class="mdl-textfield__error">Invalid Input</span>
+                        </div>
+                        <div data-mdl-tooltip="Value is in Seconds; If set to 0 AFK kick will be disabled" class="server-afk-timer mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" value="0" type="text" pattern="^\d+$" id="server_afk_timer">
+                            <label class="mdl-textfield__label" for="server_afk_timer">AFK Kick Timer</label>
+                            <span class="mdl-textfield__error">Invalid Input</span>
+                        </div>
+                        <label class="server-pcr mdl-switch mdl-js-switch mdl-js-ripple-effect" for="server-pcr">
+                            <input type="checkbox" id="server-pcr" class="mdl-switch__input">
+                            <span class="mdl-switch__label">Disable PCR</span>
+                        </label>
+                        <div data-mdl-tooltip="Supports symbols using the format [HEX VALUE]" class="server-description mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="server_description">
+                            <label class="mdl-textfield__label" for="server_description">Description</label>
+                            <span class="mdl-textfield__error">Invalid Input</span>
+                        </div>
+                        <button data-mdl-tooltip="Hex Values" class="mentula-hex mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+                    <div class="mdl-tabs__panel" id="server_modifiers">
+                        <div class="server-br-fix mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" value="400" type="text" pattern="^\d+$" id="server_br_fix">
+                            <label class="mdl-textfield__label" for="server_xdely_timer">Battle Rifle Velocity</label>
+                            <span class="mdl-textfield__error">Invalid Input</span>
+                        </div>
+                        <label data-mdl-tooltip="This setting will force the server to spawn all projectiles serversided, which seems to improve hit registration (This also makes players bleed on every shot)" class="server-sync-proj mdl-switch mdl-js-switch mdl-js-ripple-effect" for="server-sync-proj">
+                            <input type="checkbox" id="server-sync-proj" class="mdl-switch__input">
+                            <span class="mdl-switch__label">Enable Serversided Projectiles</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="PlayerTableRowTemplate">
+        <tr class="player-row">
+            <td class="mdl-data-table__cell--non-numeric player-emblem"></td>
+            <td class="mdl-data-table__cell--non-numeric"></td>
+            <td class="mdl-data-table__cell--non-numeric"></td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <i class="material-icons" data-mdl-tooltip="Ban Player">
+                    gavel
+                </i>
+                <i class="material-icons" data-mdl-tooltip="Kick Player">
+                    desktop_access_disabled
+                </i>
+                <i class="material-icons" style="display: none !important" data-mdl-tooltip="Timeout Player">
+                    perm_scan_wifi
+                </i>
+            </td>
+        </tr>
+    </template>
+    <template id="MessageListTemplate">
+        <li class="mdl-list__item mdl-list__item--two-line">
+            <span class="mdl-list__item-primary-content">
+                <span>Message</span>
+                <span class="mdl-list__item-sub-title">Interval</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">close</i></a>
+            </span>
+        </li>
+    </template>
+    <template id="ListRowTemplate">
+        <div class="list-item mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+                <span class="list-name"></span>
+            </span>
+            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">close</i></a>
+        </div>
+    </template>
+    <template id="PlaylistRowTemplate">
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+
+            </span>
+        </li>
+    </template>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿.server-container {
+    float: left;
+    width: 33%;
+    height: 450px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.status-container {
+    width: 30%;
+    float: left;
+}
+
+.player-container {
+    width: 70%;
+    float: left;
+}
+
+h2.server-title {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
